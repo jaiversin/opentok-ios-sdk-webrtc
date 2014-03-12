@@ -116,6 +116,18 @@ exist). Add the following to the list of required background modes:
 	- App plays audio
 	- App provides Voice over IP services
 
+Or if you use [CocoaPods](http://cocoapods.org/?q=opentok):
+
+1. Add `pod 'OpenTokSDK-WebRTC', '~> 2.1.7'` to your Podfile
+2. Execute `pod install`
+
+If you are building an iOS 7 application, follow these steps:
+
+1. Select your project on the Project Navigator and choose  ”Other..” in ”Architectures” under the "Build Settings" tab.
+2. Change the current value to `$(ARCHS_STANDARD_32_BIT)`
+3. For the ”C++ Standard Library” property, select `libstdc++ (GNU C++ standard library)`
+4. Add an empty .mm file to your project.
+
 Next steps:
 
 1. In the ViewController.h file, add the following line (after `import <UIKit/UIKit.h>`):
